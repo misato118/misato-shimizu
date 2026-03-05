@@ -12,7 +12,7 @@ export default function Home() {
         </header>
         <div className="grow grid place-content-center">
           <ScrollReveal>
-            <div className="max-w-md mx-auto text-center">
+            <div className="max-w-lg mx-auto text-center">
               <h1 className="text-5xl font-bold mb-4 text-primary">Misato Shimizu</h1>
               <p className="leading-relaxed text-base-content/80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
             </div>
