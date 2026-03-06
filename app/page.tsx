@@ -1,6 +1,8 @@
+import Project from "@/components/Project";
 import ScrollReveal from "@/components/ScrollReveal"
 import WorkExperience from "@/components/WorkExperience";
 import { WORK_EXPERIENCE } from "@/constants/experience";
+import { PROJECT_DETAILS } from "@/constants/projects";
 
 export default function Home() {
   return (
@@ -32,10 +34,18 @@ export default function Home() {
           </div>
         </ScrollReveal>
       </div>
+      <div className="grid place-content-center h-screen snap-center">
+        <ScrollReveal>
+          <div className="max-w-3xl mx-auto h-[80vh] flex flex-col">
+            <div className="grow overflow-y-auto flex flex-col justify-center-safe pr-4 custom-scrollbar my-1">
+              {PROJECT_DETAILS.map((project, index) => (
+                <Project key={index} project={project} />
+              ))}
+            </div>            
+          </div>
+        </ScrollReveal>
+      </div>
 
-      <ScrollReveal>
-        <div className="grid place-content-center h-screen snap-center">C</div>
-      </ScrollReveal>
       <ScrollReveal>
         <div className="grid place-content-center h-screen snap-center">D</div>
       </ScrollReveal>
