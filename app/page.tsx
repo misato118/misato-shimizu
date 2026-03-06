@@ -1,3 +1,4 @@
+import NavBar from "@/components/NavBar";
 import Project from "@/components/Project";
 import ScrollReveal from "@/components/ScrollReveal"
 import WorkExperience from "@/components/WorkExperience";
@@ -6,14 +7,9 @@ import { PROJECT_DETAILS } from "@/constants/projects";
 
 export default function Home() {
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory bg-base-300">
+    <div className="h-screen overflow-y-scroll snap-y snap-mandatory bg-base-300 scroll-smooth">
       <div className="h-full flex flex-col snap-center">
-        <header className="bg-neutral h-auto">
-          <div className="flex justify-end-safe p-6 lg:px-8 gap-x-4">
-            <button className="btn btn-secondary btn-circle w-fit p-3 text-neutral-content">Check Playground</button>
-            <button className="btn btn-primary btn-circle w-fit p-3 text-neutral-content">Download Resume</button>
-          </div>
-        </header>
+        <NavBar />
         <div className="grow grid place-content-center">
           <ScrollReveal>
             <div className="max-w-lg mx-auto text-center">
@@ -46,8 +42,9 @@ export default function Home() {
         </ScrollReveal>
       </div>
 
-      <ScrollReveal>
-        <div className="grid place-content-center h-screen snap-center">
+      
+      <div id="playground" className="grid place-content-center h-screen snap-center">
+        <ScrollReveal>
           <div className="flex flex-col items-center gap-4 opacity-60">
             <span className="loading loading-dots loading-lg text-primary"></span>
             <div className="text-center">
@@ -58,8 +55,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
-      </ScrollReveal>
+        </ScrollReveal>
+      </div>
     </div>
   );
 }
