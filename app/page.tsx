@@ -47,7 +47,18 @@ export default function Home() {
       </div>
 
       <ScrollReveal>
-        <div className="grid place-content-center h-screen snap-center">D</div>
+        <div className="grid place-content-center h-screen snap-center">
+          <div className="flex flex-col items-center gap-4 opacity-60">
+            <span className="loading loading-dots loading-lg text-primary"></span>
+            <div className="text-center">
+              <h3 className="text-xl font-mono font-bold">The Playground</h3>
+              <p className="mt-4 max-w-xs text-sm italic">
+                I'm currently architecting a playground here.
+                Check back soon for the live demo.
+              </p>
+            </div>
+          </div>
+        </div>
       </ScrollReveal>
     </div>
   );
