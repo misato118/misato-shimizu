@@ -1,4 +1,6 @@
 import ScrollReveal from "@/components/ScrollReveal"
+import WorkExperience from "@/components/WorkExperience";
+import { WORK_EXPERIENCE } from "@/constants/experience";
 
 export default function Home() {
   return (
@@ -19,9 +21,18 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </div>
-      <ScrollReveal>
-        <div className="grid place-content-center h-screen snap-center">B</div>
-      </ScrollReveal>
+      <div className="grid place-content-center h-screen snap-center">
+        <ScrollReveal>
+          <div className="max-w-5xl mx-auto h-[75vh] flex flex-col">
+            <div className="grow overflow-y-auto flex flex-col justify-center gap-y-2 pr-4 custom-scrollbar">
+              {WORK_EXPERIENCE.map((experience, index) => (
+                <WorkExperience key={index} experience={experience} />
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
+      </div>
+
       <ScrollReveal>
         <div className="grid place-content-center h-screen snap-center">C</div>
       </ScrollReveal>
