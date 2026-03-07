@@ -13,7 +13,7 @@ const NavBar = () => {
       <div className="flex justify-end-safe p-6 lg:px-8 gap-x-4">
         <button onClick={() => scrollToPlayground("playground")} className="btn btn-secondary btn-circle w-fit p-3 text-neutral-content">Check Playground</button>
         <button className="btn btn-primary btn-circle w-fit p-3 text-neutral-content">
-          <a href="/resume.pdf" download="Misato_Shimizu_Resume.pdf">Download Resume</a>
+          <a href="/Misato_Shimizu_Resume.pdf" download="Misato_Shimizu_Resume.pdf">Download Resume</a>
         </button>
       </div>
     </header>
