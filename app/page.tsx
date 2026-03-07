@@ -12,9 +12,13 @@ export default function Home() {
         <NavBar />
         <div className="grow grid place-content-center">
           <ScrollReveal>
-            <div className="max-w-lg mx-auto text-center">
+            <div className="max-w-5xl mx-auto text-center">
               <h1 className="text-5xl font-bold mb-4 text-primary">Misato Shimizu</h1>
-              <p className="leading-relaxed text-base-content/80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+              <p className="leading-relaxed text-base-content/80">
+                Hi there👋<br />
+                I’m a <span className="text-accent">full-stack software engineer</span> with a deep curiosity and passion for building technology.<br />
+                My goal is to create <span className="text-accent">simple</span>, <span className="text-accent">high-quality</span> products.
+              </p>
             </div>
           </ScrollReveal>
         </div>
